@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: senolatac/sha-java-action@v3
+      - uses: senolatac/sha-java-action@v4
         with:
           codacy-project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
