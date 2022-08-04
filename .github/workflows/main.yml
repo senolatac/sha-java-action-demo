@@ -12,7 +12,6 @@ jobs:
     if: github.ref != 'refs/heads/dev'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - uses: senolatac/sha-action/java/coverage@v8
         with:
           codacy-project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
