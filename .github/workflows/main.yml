@@ -5,7 +5,6 @@ jobs:
     name: Build and Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - uses: senolatac/sha-action/java/test@v8
   coverage:
     name: Upload Coverage Report
